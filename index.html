@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>USCMI | Solicitation page previews</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #fff; color: #1c2733; font: 16px/1.6 "Source Sans 3", "Source Sans Pro", "Segoe UI", Arial, sans-serif; }
+    header { padding: 24px 20px; background: #f4f6f8; border-bottom: 1px solid #d9e0e7; }
+    h1 { color: #102C4D; font-size: 1.4rem; line-height: 1.25; margin: 0 0 12px; }
+    p { margin: 8px 0; }
+    nav { display: flex; flex-wrap: wrap; gap: 12px; margin: 18px 0; }
+    a { color: #102C4D; text-underline-offset: 3px; }
+    nav a { padding: 10px 16px; border: 1px solid #102C4D; border-radius: 4px; text-decoration: none; font-weight: 600; }
+    nav a:hover, nav a[aria-current="page"] { background: #102C4D; color: #fff; }
+    a:focus-visible, summary:focus-visible { outline: 3px solid #CE2030; outline-offset: 3px; }
+    summary { cursor: pointer; padding: 8px 0; color: #102C4D; }
+    code { overflow-wrap: anywhere; }
+    main { padding: 32px 20px; }
+    iframe { display: block; width: 100%; min-height: 85vh; border: 0; }
+    .usage { font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>USCMI solicitation page previews</h1>
+    <nav aria-label="Preview version">
+      <a href="uscmi-advnuc-2026-2-full.html" target="preview" aria-current="page">Nuclear: full solicitation</a>
+      <a href="uscmi-advnuc-2026-2-roles-apply.html" target="preview">Nuclear: roles &amp; apply</a>
+      <a href="uscmi-ai-2026-1-full.html" target="preview">AI: full solicitation</a>
+      <a href="uscmi-ai-2026-1-roles-apply.html" target="preview">AI: roles &amp; apply</a>
+    </nav>
+    <details class="usage">
+      <summary>How to use these in Squarespace</summary>
+      <p>Open either HTML file in a text editor and copy its entire contents into a Squarespace HTML Code Block. Keep <strong>Display Source off</strong>. Use a white section background. The compact block belongs below your existing page heading.</p>
+      <p>Both snippets are left-aligned and fill their Code Block's width. Widen the Code Block and adjust the section's content width or side padding in Squarespace to give them more room.</p>
+      <p>These are alternative versions: the full page already includes roles, downloads and how to apply. This preview toolbar is not part of either snippet.</p>
+      <p>Nuclear: <a href="uscmi-advnuc-2026-2-full.html" download>Download full snippet</a> &middot; <a href="uscmi-advnuc-2026-2-roles-apply.html" download>Download compact snippet</a></p>
+      <p>AI: <a href="uscmi-ai-2026-1-full.html" download>Download full snippet</a> &middot; <a href="uscmi-ai-2026-1-roles-apply.html" download>Download compact snippet</a></p>
+      <p>The nuclear pages now use the supplied Elfsight widget for document downloads; no local PDF URL replacement is needed. The <a href="documents/uscmi-advnuc-2026-2-scope-of-work.pdf" download>public Scope of Work PDF</a> remains available locally for reference. Do not publish the combined internal proposal.</p>
+      <p>Both use USCMI navy and red with Source Sans when available, falling back to system fonts without fetching fonts. To guarantee Source Sans, configure it in your Squarespace site typography.</p>
+      <p>Each opportunity has its own Elfsight widget, which needs network access and may require its approved site domain. If it does not display, an email link remains available to request documents. Include the platform script only once per published page.</p>
+      <p>Keep the small alignment script after the widget in each snippet. It removes Elfsight's centered 800px width inside its isolated shadow DOM when the widget loads. Page CSS alone cannot override those internal styles.</p>
+      <p>The deadline is still relative to project approval. Confirm the notice is open and replace the relative deadline with an approved date when one is supplied before publishing.</p>
+    </details>
+  </header>
+  <main>
+    <iframe name="preview" title="Nuclear full solicitation preview" src="uscmi-advnuc-2026-2-full.html"></iframe>
+  </main>
+  <script>
+    const frame = document.querySelector('iframe');
+    const links = document.querySelectorAll('nav a');
+    let observer;
+    frame.addEventListener('load', () => {
+      if (observer) observer.disconnect();
+      try {
+        const doc = frame.contentDocument;
+        if (!doc) return;
+        doc.documentElement.lang = 'en';
+        doc.body.style.margin = '0';
+        const updateHeight = () => {
+          frame.style.height = Math.ceil(doc.body.getBoundingClientRect().height + 8) + 'px';
+        };
+        observer = new ResizeObserver(updateHeight);
+        observer.observe(doc.body);
+        updateHeight();
+      } catch (error) {
+        console.warn('Automatic preview sizing unavailable; use the frame scrollbar.', error);
+      }
+    });
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        links.forEach(item => item.removeAttribute('aria-current'));
+        link.setAttribute('aria-current', 'page');
+        frame.title = link.textContent + ' preview';
+      });
+    });
+  </script>
+</body>
+</html>

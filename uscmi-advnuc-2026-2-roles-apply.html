@@ -1,0 +1,139 @@
+<!--
+  USCMI-ADVNUC-2026.2 | Participant roles + downloads + how to apply
+  Paste this ENTIRE snippet into a Squarespace HTML Code Block, Display
+  Source OFF, below your page heading. Left-aligned and full-width.
+  Source: applicant Invitation to Participate in the proposal, pages 13-15.
+  Advisory-board funding is not specified; do not label it "unfunded".
+  Deadline remains relative: within four weeks of project approval.
+  Source Sans when available; no external font requests.
+
+  Elfsight widget: d6f74874-d485-4919-8362-edd24ab225a7.
+  Keep the alignment script after the widget; it styles Elfsight's shadow DOM.
+  Include platform.js only once per published page.
+  Do not publish the combined internal proposal.
+-->
+<style>
+  .uscmi-ra {
+    --nv: #102C4D; --ink: #1c2733; --muted: #5a6b7b; --line: #d9e0e7;
+    --red: #CE2030; --soft: #f4f6f8;
+    font-family: "Source Sans 3", "Source Sans Pro", "Source Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1rem; line-height: 1.6; color: var(--ink);
+    width: 100%; max-width: none; margin: 0; text-align: left; overflow-wrap: anywhere;
+    -webkit-font-smoothing: antialiased;
+  }
+  .uscmi-ra *, .uscmi-ra *::before, .uscmi-ra *::after { box-sizing: border-box; }
+  .uscmi-ra :is(h2, p, a, li, span) { font-family: inherit; text-align: left; }
+  .uscmi-ra a { color: var(--nv); text-decoration: underline; text-underline-offset: 3px; }
+  .uscmi-ra a:focus-visible { outline: 3px solid var(--red); outline-offset: 3px; }
+  .uscmi-ra__roles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin: 0 0 24px; }
+  .uscmi-ra__card { position: relative; background: #fff; border: 1px solid var(--line); border-radius: 4px; padding: 24px 22px; }
+  .uscmi-ra__card::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--nv); border-radius: 4px 0 0 4px; }
+  .uscmi-ra__card > p { margin: 0 0 14px; font-size: .97rem; color: var(--ink); line-height: 1.6; }
+  .uscmi-ra .uscmi-ra__n { font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--red); margin: 0 0 6px; }
+  .uscmi-ra .uscmi-ra__h { font-size: 1.12rem; font-weight: 700; line-height: 1.4; letter-spacing: normal; text-transform: none; color: var(--nv); margin: 0 0 10px; }
+  .uscmi-ra__pay { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; border-top: 1px solid var(--line); padding-top: 14px; margin-top: 4px; font-size: .85rem; color: var(--muted); }
+  .uscmi-ra__chip { background: var(--soft); color: var(--nv); font-weight: 700; padding: 4px 10px; border-radius: 999px; font-size: .82rem; }
+  .uscmi-ra__docs { margin: 0 0 24px; }
+  .uscmi-ra .uscmi-ra__docs-h, .uscmi-ra .uscmi-ra__apply-h { font-size: 1.4rem; font-weight: 700; line-height: 1.25; letter-spacing: normal; text-transform: none; color: var(--nv); margin: 0 0 14px; }
+  .uscmi-ra [data-uscmi-files],
+  .uscmi-ra [data-uscmi-files] .es-embed-root,
+  .uscmi-ra [data-uscmi-files] .eapp-file-embed-widget-container {
+    width: 100% !important; max-width: none !important;
+    margin-left: 0 !important; margin-right: 0 !important;
+    text-align: left;
+  }
+  .uscmi-ra .uscmi-ra__docs-help { font-size: .85rem; color: var(--muted); margin: 14px 0 0; }
+  .uscmi-ra__apply { background: var(--soft); border: 1px solid var(--line); border-radius: 4px; padding: 28px 26px; }
+  .uscmi-ra .uscmi-ra__apply-h { margin-bottom: 12px; }
+  .uscmi-ra__apply > p { margin: 0 0 16px; line-height: 1.6; }
+  .uscmi-ra__apply ul { margin: 8px 0 20px; padding-left: 20px; }
+  .uscmi-ra__apply li { margin: 0 0 8px; line-height: 1.6; }
+  .uscmi-ra .uscmi-ra__apply-lead { display: block; font-size: 1.05rem; font-weight: 700; color: var(--nv); background: #fff; border: 1px solid var(--line); border-left: 4px solid var(--nv); border-radius: 4px; padding: 14px 18px; margin: 0 0 18px; }
+  .uscmi-ra__apply-lead a { font-weight: 700; }
+  .uscmi-ra .uscmi-ra__cta {
+    display: inline-block; background: var(--nv); color: #fff !important;
+    text-decoration: none; font-weight: 700; letter-spacing: .02em; padding: 14px 28px;
+    border-radius: 4px; transition: background .12s ease, transform .12s ease;
+  }
+  .uscmi-ra .uscmi-ra__cta:hover { background: #214195; transform: translateY(-1px); }
+  .uscmi-ra .uscmi-ra__note { font-size: .85rem; color: var(--muted); margin: 14px 0 0; }
+  @media (max-width: 600px) {
+    .uscmi-ra__roles { grid-template-columns: minmax(0, 1fr); }
+    .uscmi-ra__apply { padding: 22px 20px; }
+    .uscmi-ra .uscmi-ra__cta { display: block; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .uscmi-ra .uscmi-ra__cta { transition: none; }
+    .uscmi-ra .uscmi-ra__cta:hover { transform: none; }
+  }
+</style>
+
+<div class="uscmi-ra">
+  <div class="uscmi-ra__roles">
+    <section class="uscmi-ra__card">
+      <p class="uscmi-ra__n">Role 01</p>
+      <h2 class="uscmi-ra__h">Setting up and executing the analyses</h2>
+      <p>Help establish the analytic framework, identify and evaluate potential candidate government applications, and identify application concepts. The analytic support role includes the design, planning and execution of the analysis.</p>
+      <div class="uscmi-ra__pay"><span class="uscmi-ra__chip">Up to $350K</span> estimated, not to exceed</div>
+    </section>
+    <section class="uscmi-ra__card">
+      <p class="uscmi-ra__n">Role 02</p>
+      <h2 class="uscmi-ra__h">Stakeholder review of analyses and report outcomes</h2>
+      <p>Participate on the industry advisory board and provide key stakeholder perspectives on the criteria, analyses and outcomes relating to government applications for maritime nuclear technologies.</p>
+      <div class="uscmi-ra__pay"><span class="uscmi-ra__chip">Industry advisory board</span> stakeholder perspectives</div>
+    </section>
+  </div>
+
+  <section class="uscmi-ra__docs">
+    <h2 class="uscmi-ra__docs-h">Download the documents</h2>
+    <!-- Elfsight File Embed | USCMI Scope (USCMI-ADVNUC-2026.2) -->
+    <script src="https://elfsightcdn.com/platform.js" async></script>
+    <div class="elfsight-app-d6f74874-d485-4919-8362-edd24ab225a7" data-elfsight-app-lazy data-uscmi-files></div>
+    <script>
+      (() => {
+        const widget = document.currentScript.previousElementSibling;
+        const alignWidget = () => {
+          const host = widget.querySelector('.es-embed-root');
+          const root = host && host.shadowRoot;
+          if (!root || root.querySelector('[data-uscmi-widget-layout]')) return;
+          // Override Elfsight's centered, fixed-width shadow-root layout.
+          const style = document.createElement('style');
+          style.setAttribute('data-uscmi-widget-layout', '');
+          style.textContent = `
+            :host(.es-embed-root) {
+              width: 100% !important;
+              max-width: none !important;
+              margin-left: 0 !important;
+              margin-right: 0 !important;
+            }
+            .eapp-file-embed-widget-container {
+              width: 100% !important;
+              max-width: none !important;
+              margin-left: 0 !important;
+              margin-right: 0 !important;
+            }
+          `;
+          root.appendChild(style);
+        };
+        new MutationObserver(alignWidget).observe(widget, { childList: true, subtree: true });
+        alignWidget();
+      })();
+    </script>
+    <p class="uscmi-ra__docs-help">Need help accessing the document? <a href="mailto:info@uscmi.org?subject=USCMI-ADVNUC-2026.2%20Documents">Request the Scope of Work by email</a>.</p>
+  </section>
+
+  <section class="uscmi-ra__apply">
+    <h2 class="uscmi-ra__apply-h">How to apply</h2>
+    <p>Submit a short response of no more than five pages that notes the role or roles of interest, identifies the specific elements of the Scope of Work your organization is applying to support, documents demonstrated capabilities and estimates costs or rates for participation.</p>
+    <ul>
+      <li>Note the role or roles of interest.</li>
+      <li>Identify the Scope of Work elements you would support.</li>
+      <li>Document your demonstrated capabilities.</li>
+      <li>Provide estimated costs or rates for participation.</li>
+      <li>Submit within four weeks of project approval.</li>
+    </ul>
+    <p class="uscmi-ra__apply-lead">Email responses to <a href="mailto:info@uscmi.org">info@uscmi.org</a> or use the link below.</p>
+    <a class="uscmi-ra__cta" href="mailto:info@uscmi.org?subject=USCMI-ADVNUC-2026.2%20Response">Submit your response</a>
+    <p class="uscmi-ra__note">USCMI funding is prioritized for domestic entities as recipients. Questions may be directed to <a href="mailto:info@uscmi.org">info@uscmi.org</a>. Additional project opportunities will be announced separately, and updates to this notice may be issued.</p>
+  </section>
+</div>

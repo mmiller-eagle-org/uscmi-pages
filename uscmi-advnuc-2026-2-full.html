@@ -1,0 +1,244 @@
+<!--
+  USCMI-ADVNUC-2026.2 | Full solicitation | Squarespace HTML Code Block
+  Paste this ENTIRE snippet with Display Source OFF.
+  Left-aligned; fills the containing Code Block. No external font requests.
+  Matches the established USCMI solicitation layout and brand colors.
+
+  SOURCES: Invitation to Participate, proposal PDF pages 13-15; standalone
+  External Scope of Work, pages 1-5. Internal planning tables are not published.
+  $350K is analytic support funding, not a statement of total project budget.
+  Advisory-board funding is not specified in the public invitation.
+  The unrelated "maritime prosperity zone" clause in the invitation is omitted.
+  Timing remains relative pending an approved deadline and publication status.
+
+  Elfsight widget: d6f74874-d485-4919-8362-edd24ab225a7.
+  Keep the alignment script after the widget; it styles Elfsight's shadow DOM.
+  Include platform.js only once per published page. Do not publish the
+  combined internal proposal.
+  Use this version OR the compact roles/apply version.
+-->
+<style>
+  .uscmi-sol {
+    --uscmi-navy: #102C4D; --uscmi-red: #CE2030; --uscmi-ink: #1c2733;
+    --uscmi-muted: #5a6b7b; --uscmi-line: #d9e0e7; --uscmi-soft: #f4f6f8;
+    color: var(--uscmi-ink);
+    font-family: "Source Sans 3", "Source Sans Pro", "Source Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1rem; line-height: 1.6; width: 100%; max-width: none;
+    margin: 0; text-align: left; padding: 8px 0 24px; overflow-wrap: anywhere;
+    -webkit-font-smoothing: antialiased;
+  }
+  .uscmi-sol *, .uscmi-sol *::before, .uscmi-sol *::after { box-sizing: border-box; }
+  .uscmi-sol :is(h1, h2, h3, p, a, li, span) { font-family: inherit; text-align: left; }
+  .uscmi-sol a { color: var(--uscmi-navy); text-decoration: underline; text-underline-offset: 3px; }
+  .uscmi-sol a:focus-visible { outline: 3px solid var(--uscmi-red); outline-offset: 3px; }
+  .uscmi-sol .uscmi-sol__eyebrow {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px;
+    font-size: .78rem; letter-spacing: .06em; text-transform: uppercase;
+    color: var(--uscmi-muted); margin: 0 0 18px;
+  }
+  .uscmi-sol .uscmi-sol__tag {
+    display: inline-block; background: var(--uscmi-navy); color: #fff;
+    padding: 5px 12px; border-radius: 999px; letter-spacing: .04em; font-weight: 600;
+  }
+  .uscmi-sol__notice { font-variant-numeric: tabular-nums; }
+  .uscmi-sol .uscmi-sol__title {
+    font-size: clamp(1.85rem, 4.2vw, 2.9rem); line-height: 1.12;
+    font-weight: 700; letter-spacing: -.01em; text-transform: none;
+    color: var(--uscmi-navy); margin: 0 0 14px;
+  }
+  .uscmi-sol .uscmi-sol__rule { width: 64px; height: 4px; background: var(--uscmi-red); border: 0; margin: 0 0 22px; border-radius: 2px; }
+  .uscmi-sol .uscmi-sol__lede { font-size: clamp(1.05rem, 1.6vw, 1.22rem); line-height: 1.6; color: var(--uscmi-ink); margin: 0 0 8px; }
+  .uscmi-sol__facts {
+    display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px;
+    background: var(--uscmi-line); border: 1px solid var(--uscmi-line);
+    border-radius: 4px; overflow: hidden; margin: 28px 0 36px;
+  }
+  .uscmi-sol__fact { background: #fff; padding: 16px 18px; }
+  .uscmi-sol .uscmi-sol__fact-k { font-size: .72rem; text-transform: uppercase; letter-spacing: .07em; color: var(--uscmi-muted); margin: 0 0 4px; font-weight: 600; }
+  .uscmi-sol .uscmi-sol__fact-v { font-size: 1.02rem; color: var(--uscmi-navy); font-weight: 700; margin: 0; }
+  .uscmi-sol__fact-v small { display: block; font-weight: 500; color: var(--uscmi-muted); font-size: .8rem; margin-top: 2px; }
+  .uscmi-sol .uscmi-sol__h2 {
+    font-size: 1.4rem; font-weight: 700; line-height: 1.25; letter-spacing: normal;
+    text-transform: none; color: var(--uscmi-navy); margin: 40px 0 12px; padding-top: 4px;
+  }
+  .uscmi-sol__body > p { margin: 0 0 16px; }
+  .uscmi-sol__body strong { color: var(--uscmi-navy); }
+  .uscmi-sol__body ul { margin: 8px 0 20px; padding-left: 20px; }
+  .uscmi-sol__body li { margin: 0 0 10px; }
+  .uscmi-sol__roles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin: 22px 0 8px; }
+  .uscmi-sol__role { border: 1px solid var(--uscmi-line); border-radius: 4px; padding: 24px 22px; background: #fff; position: relative; }
+  .uscmi-sol__role::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--uscmi-navy); border-radius: 4px 0 0 4px; }
+  .uscmi-sol__role > p { margin: 0 0 14px; font-size: .97rem; color: var(--uscmi-ink); }
+  .uscmi-sol .uscmi-sol__role-n { font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--uscmi-red); margin: 0 0 6px; }
+  .uscmi-sol .uscmi-sol__role-h { font-size: 1.12rem; line-height: 1.4; font-weight: 700; letter-spacing: normal; text-transform: none; color: var(--uscmi-navy); margin: 0 0 10px; }
+  .uscmi-sol__role-money { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: .85rem; color: var(--uscmi-muted); border-top: 1px solid var(--uscmi-line); padding-top: 14px; margin-top: 4px; }
+  .uscmi-sol__chip { background: var(--uscmi-soft); color: var(--uscmi-navy); font-weight: 700; padding: 4px 10px; border-radius: 999px; font-size: .82rem; }
+  .uscmi-sol__docs { margin: 36px 0 8px; }
+  .uscmi-sol .uscmi-sol__docs-h { font-size: 1.4rem; font-weight: 700; line-height: 1.25; letter-spacing: normal; text-transform: none; color: var(--uscmi-navy); margin: 0 0 16px; }
+  .uscmi-sol [data-uscmi-files],
+  .uscmi-sol [data-uscmi-files] .es-embed-root,
+  .uscmi-sol [data-uscmi-files] .eapp-file-embed-widget-container {
+    width: 100% !important; max-width: none !important;
+    margin-left: 0 !important; margin-right: 0 !important;
+    text-align: left;
+  }
+  .uscmi-sol .uscmi-sol__docs-help { font-size: .85rem; color: var(--uscmi-muted); margin: 14px 0 0; }
+  .uscmi-sol__apply { background: var(--uscmi-soft); border: 1px solid var(--uscmi-line); border-radius: 4px; padding: 28px 26px; margin: 36px 0 8px; }
+  .uscmi-sol__apply .uscmi-sol__h2 { margin-top: 0; }
+  .uscmi-sol__apply > p { margin: 0 0 16px; }
+  .uscmi-sol__apply ul { margin: 8px 0 20px; padding-left: 20px; }
+  .uscmi-sol__apply li { margin: 0 0 8px; }
+  .uscmi-sol .uscmi-sol__apply-lead { display: block; font-size: 1.05rem; font-weight: 700; color: var(--uscmi-navy); background: #fff; border: 1px solid var(--uscmi-line); border-left: 4px solid var(--uscmi-navy); border-radius: 4px; padding: 14px 18px; margin: 0 0 18px; }
+  .uscmi-sol__apply-lead a { font-weight: 700; }
+  .uscmi-sol .uscmi-sol__cta {
+    display: inline-block; background: var(--uscmi-navy); color: #fff !important;
+    text-decoration: none; font-weight: 700; letter-spacing: .02em; padding: 14px 28px;
+    border-radius: 4px; transition: background .12s ease, transform .12s ease;
+  }
+  .uscmi-sol .uscmi-sol__cta:hover { background: #214195; transform: translateY(-1px); }
+  .uscmi-sol .uscmi-sol__apply-note { font-size: .85rem; color: var(--uscmi-muted); margin: 14px 0 0; }
+  .uscmi-sol__about { border-top: 1px solid var(--uscmi-line); margin-top: 44px; padding-top: 28px; }
+  .uscmi-sol__about .uscmi-sol__h2 { margin-top: 0; }
+  .uscmi-sol__about p { font-size: .95rem; color: var(--uscmi-muted); margin: 0; }
+  @media (max-width: 600px) {
+    .uscmi-sol__facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .uscmi-sol__roles { grid-template-columns: minmax(0, 1fr); }
+    .uscmi-sol__apply, .uscmi-sol__role { padding: 20px 18px; }
+    .uscmi-sol .uscmi-sol__cta { display: block; }
+  }
+  @media (max-width: 360px) { .uscmi-sol__facts { grid-template-columns: minmax(0, 1fr); } }
+  @media (prefers-reduced-motion: reduce) {
+    .uscmi-sol .uscmi-sol__cta { transition: none; }
+    .uscmi-sol .uscmi-sol__cta:hover { transform: none; }
+  }
+</style>
+
+<article class="uscmi-sol">
+  <div class="uscmi-sol__eyebrow">
+    <span class="uscmi-sol__tag">Invitation to Participate</span>
+    <span class="uscmi-sol__notice">Notice ID: USCMI-ADVNUC-2026.2</span>
+    <span>Secretariat Managed</span>
+  </div>
+  <h1 class="uscmi-sol__title">Analysis of Government Applications for Derisking Commercial Maritime Nuclear Applications</h1>
+  <hr class="uscmi-sol__rule" aria-hidden="true">
+  <p class="uscmi-sol__lede">The U.S. Center for Maritime Innovation (USCMI) is building a collaborative team to assess how government experience with advanced nuclear technologies can reduce risk for future commercial maritime nuclear applications, including vessel transportation and maritime power generation.</p>
+
+  <dl class="uscmi-sol__facts">
+    <div class="uscmi-sol__fact">
+      <dt class="uscmi-sol__fact-k">Analysis Support Funding</dt>
+      <dd class="uscmi-sol__fact-v">Up to $350K<small>Analytic support</small></dd>
+    </div>
+    <div class="uscmi-sol__fact">
+      <dt class="uscmi-sol__fact-k">Duration</dt>
+      <dd class="uscmi-sol__fact-v">Approx. 8 Months<small>Preliminary project estimate</small></dd>
+    </div>
+    <div class="uscmi-sol__fact">
+      <dt class="uscmi-sol__fact-k">Response Length</dt>
+      <dd class="uscmi-sol__fact-v">5 Pages Max<small>Roles, capabilities, costs</small></dd>
+    </div>
+    <div class="uscmi-sol__fact">
+      <dt class="uscmi-sol__fact-k">Deadline</dt>
+      <dd class="uscmi-sol__fact-v">Approval + 4 Weeks<small>From project approval</small></dd>
+    </div>
+  </dl>
+
+  <div class="uscmi-sol__body">
+    <h2 class="uscmi-sol__h2">The opportunity</h2>
+    <p>USCMI is seeking participants for a collaborative project on the application of small modular reactors (SMRs) and other advanced nuclear technologies to the maritime sector. The project will assess existing and prospective government applications with maritime relevance to identify transferable lessons, precedents and enabling approaches that can reduce technical, regulatory, programmatic and commercialization risk.</p>
+    <p>The analysis will review government programs, policies, pilot projects and use cases, including naval nuclear propulsion, U.S. Department of Energy microreactor and advanced reactor demonstrations, national laboratory SMR research, NASA space nuclear systems, and pilot initiatives involving nuclear-powered autonomous vessels or floating nuclear power plants. It will compare approaches to regulatory approval, safety case development, security and safeguards, public acceptance, supply chains, workforce readiness, waste management and decommissioning.</p>
+    <p>USCMI will execute this project as Secretariat Managed. The Secretariat will select and engage multiple organizations to carry out the defined Scope of Work as a collective group. At least one facilitated, interactive stakeholder engagement will review the assembled research, with outcomes summarized in a report planned for public release.</p>
+    <p>This is a funded project, and participants may receive funding based on role and level of effort. <strong>The project budget includes up to $350K for analytic support.</strong> USCMI funding is prioritized for domestic entities as recipients.</p>
+    <p>USCMI will respect all project team members&rsquo; intellectual property rights in compliance with applicable federal law and the project agreements governing the scope of work.</p>
+
+    <h2 class="uscmi-sol__h2">Why it matters</h2>
+    <p>The U.S. maritime industry is pursuing greater competitiveness and maritime energy independence. Nuclear propulsion offers high energy density and operational endurance, but commercial adoption faces regulatory uncertainty, public-perception challenges, technical integration issues and cost concerns.</p>
+    <p>Government nuclear programs offer experience that may help address these barriers. This project will determine which technical solutions, regulatory precedents, institutional arrangements and lessons can transfer to commercial maritime applications, where gaps remain, and which future government applications offer the greatest potential to reduce commercial development and approval risk.</p>
+
+    <h2 class="uscmi-sol__h2">What the project will cover</h2>
+    <ul>
+      <li><strong>Project framing and candidate screening:</strong> establish an assessment framework, identify relevant government applications, gather industry feedback and prioritize candidates for detailed evaluation.</li>
+      <li><strong>Comparative assessment:</strong> develop case studies, examine regulatory and approvals pathways, assess program execution, and map enabling factors, barriers and transferable lessons to commercial maritime uses.</li>
+      <li><strong>Future government application concepts:</strong> identify and evaluate concepts that advance public-sector missions while reducing risk for commercial maritime nuclear applications.</li>
+      <li><strong>Final reporting and technology transfer:</strong> prepare a final report, executive briefing and agreed materials to communicate findings and recommendations.</li>
+    </ul>
+    <p>Assessment scenarios include government maritime nuclear propulsion, floating or port-adjacent nuclear power generation, advanced reactor demonstrations, and other mission-driven applications with analogous challenges, such as space or remote power systems.</p>
+
+    <h2 class="uscmi-sol__h2">Participant roles</h2>
+    <div class="uscmi-sol__roles">
+      <section class="uscmi-sol__role">
+        <p class="uscmi-sol__role-n">Role 01</p>
+        <h3 class="uscmi-sol__role-h">Setting up and executing the analyses</h3>
+        <p>Help establish the analytic framework, identify and evaluate potential candidate government applications, and identify application concepts. The analytic support role includes the design, planning and execution of the analysis.</p>
+        <div class="uscmi-sol__role-money"><span class="uscmi-sol__chip">Up to $350K</span> estimated, not to exceed</div>
+      </section>
+      <section class="uscmi-sol__role">
+        <p class="uscmi-sol__role-n">Role 02</p>
+        <h3 class="uscmi-sol__role-h">Stakeholder review of analyses and report outcomes</h3>
+        <p>Participate on the industry advisory board and provide key stakeholder perspectives on the criteria, analyses and outcomes relating to government applications for maritime nuclear technologies.</p>
+        <div class="uscmi-sol__role-money"><span class="uscmi-sol__chip">Industry advisory board</span> stakeholder perspectives</div>
+      </section>
+    </div>
+
+    <h2 class="uscmi-sol__h2">Who can participate</h2>
+    <p>The invitation seeks stakeholders for analytic and stakeholder input roles. Eligible applicants include small businesses, for-profit organizations other than small businesses, private institutions of higher education, public and state institutions of higher education, and nonprofit or not-for-profit organizations.</p>
+    <p>USCMI funding is prioritized for domestic entities as recipients. Participation and funding may be refined as proposals are received and selections are made.</p>
+  </div>
+
+  <section class="uscmi-sol__docs">
+    <h2 class="uscmi-sol__docs-h">Download the documents</h2>
+    <!-- Elfsight File Embed | USCMI Scope (USCMI-ADVNUC-2026.2) -->
+    <script src="https://elfsightcdn.com/platform.js" async></script>
+    <div class="elfsight-app-d6f74874-d485-4919-8362-edd24ab225a7" data-elfsight-app-lazy data-uscmi-files></div>
+    <script>
+      (() => {
+        const widget = document.currentScript.previousElementSibling;
+        const alignWidget = () => {
+          const host = widget.querySelector('.es-embed-root');
+          const root = host && host.shadowRoot;
+          if (!root || root.querySelector('[data-uscmi-widget-layout]')) return;
+          // Override Elfsight's centered, fixed-width shadow-root layout.
+          const style = document.createElement('style');
+          style.setAttribute('data-uscmi-widget-layout', '');
+          style.textContent = `
+            :host(.es-embed-root) {
+              width: 100% !important;
+              max-width: none !important;
+              margin-left: 0 !important;
+              margin-right: 0 !important;
+            }
+            .eapp-file-embed-widget-container {
+              width: 100% !important;
+              max-width: none !important;
+              margin-left: 0 !important;
+              margin-right: 0 !important;
+            }
+          `;
+          root.appendChild(style);
+        };
+        new MutationObserver(alignWidget).observe(widget, { childList: true, subtree: true });
+        alignWidget();
+      })();
+    </script>
+    <p class="uscmi-sol__docs-help">Need help accessing the document? <a href="mailto:info@uscmi.org?subject=USCMI-ADVNUC-2026.2%20Documents">Request the Scope of Work by email</a>.</p>
+  </section>
+
+  <section class="uscmi-sol__apply">
+    <h2 class="uscmi-sol__h2">How to apply</h2>
+    <p>Submit a short response of no more than five pages that notes the role or roles of interest, identifies the specific elements of the Scope of Work your organization is applying to support, documents demonstrated capabilities and estimates costs or rates for participation.</p>
+    <ul>
+      <li>Note the role or roles of interest.</li>
+      <li>Identify the Scope of Work elements you would support.</li>
+      <li>Document your demonstrated capabilities.</li>
+      <li>Provide estimated costs or rates for participation.</li>
+      <li>Submit within four weeks of project approval.</li>
+    </ul>
+    <p class="uscmi-sol__apply-lead">Email responses to <a href="mailto:info@uscmi.org">info@uscmi.org</a> or use the link below.</p>
+    <a class="uscmi-sol__cta" href="mailto:info@uscmi.org?subject=USCMI-ADVNUC-2026.2%20Response">Submit your response</a>
+    <p class="uscmi-sol__apply-note">USCMI funding is prioritized for domestic entities as recipients. Questions may be directed to <a href="mailto:info@uscmi.org">info@uscmi.org</a>. Additional project opportunities will be announced separately, and updates to this notice may be issued.</p>
+  </section>
+
+  <section class="uscmi-sol__about">
+    <h2 class="uscmi-sol__h2">About USCMI</h2>
+    <p>The James M. Inhofe National Defense Authorization Act for Fiscal Year 2023 directs the Secretary of Transportation, through a competitive cooperative agreement, to establish the U.S. Center for Maritime Innovation to support the study, research, development, assessment and deployment of emerging marine technologies and practices related to the maritime transportation system (MTS). USCMI is authorized under the Maritime Administration (MARAD) Maritime Environmental and Technical Assistance (META) program and serves as a national resource for agencies that oversee and develop the MTS.</p>
+  </section>
+</article>
